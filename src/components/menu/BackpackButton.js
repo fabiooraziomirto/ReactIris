@@ -4,20 +4,16 @@ import { Icon } from "@iconify/react";
 import { Link } from 'react-router-dom';
 
 
-const BackpackButton  = ({navigation}) => {  
+const BackpackButton  = ({ iconStyle, style }) => {  
   return (
     <Link to={'/backpackS'}>
     <Button 
       title="The Backpack"
-      style={buttonBackpack}>
-      <Icon style={{
-        resizeMode:"contain",
-        height: 100,
-        width:100,
-      }}
+      style={style}>
+      <Icon style={iconStyle}
       icon="mdi:backpack"
       />
-      <h1>The Backpack</h1>
+      <h3>The Backpack</h3>
   </Button>
     </Link>
       
@@ -25,15 +21,6 @@ const BackpackButton  = ({navigation}) => {
 
 }
 
-const     buttonBackpack = {
-  width: 75,
-  height: 75,
-  justifyContent: "center",
-  alignItems: "center",
-  padding: 10,
-  borderRadius: 100,
-  backgroundColor: "grey",
-  marginLeft: 40,
-}
+
 
 export default BackpackButton;

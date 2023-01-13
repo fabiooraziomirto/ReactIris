@@ -5,24 +5,21 @@ import { Link } from 'react-router-dom';
 import StudyMenu from "../../pages/Menu/PlayMenu"
 
 
-const PlayButton  = ({navigation, style}) => {  
+const PlayButton = ({ style, iconStyle }) => {
   return (
     <Link to="/play">
-
-    <Button 
-              title="Play"
-              style={style}>
-              <Icon style={{
-                resizeMode:"contain",
-                height: 100,
-                width:100,
-              }}
-              icon="mdi:puzzle"
-              />
-              <h1>Play</h1>
-            </Button>
-            </Link>
+      <Button
+        title="Play"
+        style={style}>
+        <Icon style={iconStyle}
+          icon="mdi:puzzle"
+        />
+        <h1>Play</h1>
+      </Button>
+    </Link>
   );
 
 }
+
+
 export default PlayButton;

@@ -25,9 +25,7 @@ function IrisModel({scale=1, top=10, left=10}) {
             width:"50vw", 
             height:"35vh",  
             flexDirection: "vertical",
-            position: 'absolute',
-            top: top,
-            left: left,
+            position: 'relative',
             zIndex: 999}}>
             <Canvas camera={{position: [0, 2, 15]}}> 
             <ambientLight intensity={0.5} />

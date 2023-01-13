@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import { Link } from 'react-router-dom';
 
 
-const CastleButton  = ({navigation}) => {  
+const CastleButton  = () => {  
   return (
     <Link to={'/castlestory'}>
       <Button 
@@ -12,12 +12,12 @@ const CastleButton  = ({navigation}) => {
     style={buttonCastleTest}>
     <Icon style={{
       resizeMode:"contain",
-      height: 100,
-      width:100,
+      height: 50,
+      width: 50,
     }}
     icon="mdi:castle"
     />
-    <h1>The Castle</h1>
+    <h3>The Castle</h3>
   </Button>
     </Link>
     
@@ -25,7 +25,7 @@ const CastleButton  = ({navigation}) => {
 
 }
 
-const    buttonCastleTest=  {
+const buttonCastleTest=  {
   width: 75,
   height: 75,
   justifyContent: "center",

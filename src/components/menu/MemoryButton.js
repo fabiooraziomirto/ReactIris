@@ -1,35 +1,26 @@
 import * as React from 'react';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Icon } from "@iconify/react";
+import { Link } from 'react-router-dom';
 
 
-const MemoryButton  = ({navigation}) => {  
+
+const MemoryButton = ({ iconStyle, style }) => {
   return (
-    <Button 
-                  title="Memory"
-                  style={buttonCastleTest}>
-                  <Icon style={{
-                    resizeMode:"contain",
-                    height: 100,
-                    width:100,
-                  }}
-                  icon="mdi:puzzle"
-                  />
-                  <h1>Memory</h1>
-                </Button>
+    <Link to="/memory">
+      <Button
+        title="Memory"
+        style={style}>
+        <Icon style={iconStyle}
+          icon="mdi:puzzle"
+        />
+        <h3>Memory</h3>
+      </Button>
+    </Link>
   );
 
 }
 
-const    buttonCastleTest=  {
-  width: 75,
-  height: 75,
-  justifyContent: "center",
-  alignItems: "center",
-  padding: 10,
-  borderRadius: 100,
-  backgroundColor: "grey",
-  marginLeft: 20,
-}
+
 
 export default MemoryButton;

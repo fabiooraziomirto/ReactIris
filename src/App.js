@@ -5,6 +5,7 @@ import PlayMenu from "./pages/Menu/PlayMenu";
 import StudyMenu from "./pages/Menu/StudyMenu";
 import Translate from "./pages/Translate/Translate";
 import ResultTranslate from "./pages/Translate/ResultTranslate"
+ 
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/studytime" element={<StudyMenu />} />
           <Route path="/translate" element={<Translate />} />
           <Route path="/resultTranslate" element={<ResultTranslate />} />
+
 
 
           {/* Using path="*"" means "match anything", so this route
