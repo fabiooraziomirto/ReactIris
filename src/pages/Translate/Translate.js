@@ -6,6 +6,7 @@ import { Keyboard, TextInput } from "react-bootstrap";
 import IrisModel from '../../models/IrisModel';
 import Bubble from '../../components/common/Bubble'
 import { Link } from 'react-router-dom';
+import Form from './Form'
 
 const Translate  = ({navigation}) => {  
     return (
@@ -22,7 +23,7 @@ const Translate  = ({navigation}) => {
           <Link to={"/resultTranslate"}>
           <Button title="Translate">Translate</Button>
           </Link>
-            
+          <Form></Form>
         </Container>
         <Container style={{flex: 1}}>
         
