@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Col, Container, Row} from "react-bootstrap"
-import PlayButton from "../../components/common/PlayButton";
+import RoundButton from "../../components/common/RoundButton";
 import StudyButton from "../../components/common/StudyButton";
 import IrisModel from "../../models/IrisModel";
 import Bubble from "../../components/common/Bubble";
@@ -17,11 +17,13 @@ function Home() {
               </Col>
             </Row>
            {/*end top part*/}
-            <Row className="justify-content-md-center">
+            <Row>
+              <Col></Col>
               <Col>
-                <PlayButton style={buttonPlay} iconStyle={iconStyle}/>
+                <RoundButton dimension={125} top={125} left={125} link={"/play"} title={"Play"} text={"Play"} />
                 <StudyButton style={buttonStudy} iconStyle={iconStyle}/>
               </Col>
+              <Col></Col>
             </Row>
         </Container>
       </div>
